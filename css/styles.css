@@ -159,14 +159,14 @@ header .contact {
 }
 
 .nav .nav-link:hover,
-.contacts .contact:hover,
 .nav .nav-link:focus,
+.contacts .contact:hover,
 .contacts .contact:focus {
     color: var(--accent-color);
 }
 
 .contacts .item:hover .header-icon,
-.contacts .item:focus .contact {
+.contacts .contact:focus .header-icon {
     fill: var(--accent-color);
 }
 
@@ -256,33 +256,6 @@ header .contact {
 .advantages-item {
     
 }
-
-/* .advantages-item::before {
-    content: "";
-    display: block;
-    height: 120px;
-    margin-bottom: 30px;
-    
-    background-color: #F5F4FA;
-    border-radius: 4px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-
-.clock::before {
-    background-image: url();
-}
-
-.diagram::before {
-    background-image: url();
-}
-
-.astronaut::before {
-    background-image: url();
-} */
-
 
 h3 {
     margin-bottom: 10px;
@@ -419,8 +392,40 @@ h3 {
 .team-link:focus .team-link-icon {
     fill: var(--white-color);
 }
+/* -----CLIENT STYLES--- */
 
-/* portfolio page styles */
+.client-list {
+    display: flex;
+    gap: 30px;
+}
+
+.client-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.client-icon {
+    fill: #AFB1B8;
+}
+
+.client-border:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.client-border:hover .client-icon {
+    fill: var(--accent-color);
+}
+
+.client-logo:focus .client-icon {
+    fill: var(--accent-color);
+}
+
+/* ---PORTFOLIO PAGE STYLES--- */
 
 .filters {
     display: flex;
@@ -484,38 +489,7 @@ h3 {
     letter-spacing: 0.03em;
 }
 
-/* CLIENT STYLES */
-
-.client-list {
-    display: flex;
-    gap: 30px;
-}
-
-.client-border {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
-
-.client-icon {
-    fill: #AFB1B8;
-}
-
-.client-border:hover,
-.client-border:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.client-border:hover .client-icon,
-.client-border:focus .client-icon {
-    fill: var(--accent-color);
-}
-
-/* footer styles */
+/* ---FOOTER STYLES--- */
 
 .logo-footer {
     display: inline-block;
